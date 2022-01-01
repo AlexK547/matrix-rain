@@ -4,7 +4,7 @@ const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '0123456789';
 
@@ -33,7 +33,7 @@ const draw = () => {
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975) {
 			rainDrops[i] = 0;
     }
-    
+
 		rainDrops[i]++;
 	}
 };
